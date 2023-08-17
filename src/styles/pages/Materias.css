@@ -1,0 +1,35 @@
+.formulario {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.agregar {
+  margin-top: 20px;
+  margin-right: 4px;
+  width: 150px;
+  background-color: green;
+  color: white;
+}
+.actualizar {
+  margin-top: 20px;
+  margin-right: 4px;
+  width: 150px;
+  background-color: blue;
+  color: white;
+}
+.eliminar {
+  margin-top: 20px;
+  width: 150px;
+  background-color: red;
+  color: white;
+}
+.materias {
+  width: 300px;
+}
+.botones {
+  display: flex;
+  justify-content: space-between;
+}
