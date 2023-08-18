@@ -27,8 +27,10 @@ function RegistroProf() {
         info
       );
       console.log('respuesta: ', response.data);
+      alert('Se asigno la materia al profesor!');
     } catch (err) {
       console.log('error al agregar: ', err.data);
+      alert('Se pudimos asignarla, revisa los datos o que no este asignada ');
     }
   };
   const actualizar = async (e) => {
@@ -44,8 +46,10 @@ function RegistroProf() {
         info
       );
       console.log('respuesta: ', response.data);
+      alert('Se actualizo la asignacion de la materia al profesor!');
     } catch (err) {
       console.log('error al agregar: ', err);
+      alert('Se pudimos cambiarla, revisa los datos o que no este asignada ');
     }
   };
   const eliminar = async (e) => {
@@ -56,8 +60,10 @@ function RegistroProf() {
         `https://localhost:7184/api/ProfesoresMaterias/${info}`
       );
       console.log('respuesta: ', response.data);
+      alert('Se elimino la asignacion ');
     } catch (err) {
       console.log('error al agregar: ', err.data);
+      alert('Se pudimos eliminarla, revisa los datos');
     }
   };
   return (

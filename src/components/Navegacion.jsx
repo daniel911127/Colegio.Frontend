@@ -26,6 +26,7 @@ function Navegacion() {
                   Profesores
                 </NavDropdown.Item>
               </NavDropdown>
+              <Nav.Link href='informe'>Informe</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

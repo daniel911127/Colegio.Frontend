@@ -26,8 +26,10 @@ function Materias() {
         info
       );
       console.log('respuesta: ', response.data);
+      alert('Materia creada!');
     } catch (err) {
       console.log('error al agregar: ', err.data);
+      alert('No pudimos crearla, revisa los datos');
     }
   };
   const actualizar = async (e) => {
@@ -42,8 +44,10 @@ function Materias() {
         info
       );
       console.log('respuesta: ', response.data);
+      alert('Materia actualizada con exito!');
     } catch (err) {
       console.log('error al agregar: ', err.data);
+      alert('No pudimos actualizarlo!');
     }
   };
   const eliminar = async (e) => {
@@ -54,8 +58,10 @@ function Materias() {
         `https://localhost:7184/api/Materias/${info}`
       );
       console.log('respuesta: ', response.data);
+      alert('Materia Borrada!');
     } catch (err) {
       console.log('error al agregar: ', err.data);
+      alert('No pudimos Eliminarla, revisa los datos');
     }
   };
   return (

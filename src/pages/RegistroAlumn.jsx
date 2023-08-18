@@ -30,8 +30,10 @@ function RegistroAlumn() {
         info
       );
       console.log('respuesta: ', response.data);
+      alert('Materia asignada a alumno!');
     } catch (err) {
       console.log('error al agregar: ', err.data);
+      alert('No pudimos asignar la materia, revisa los datos!');
     }
   };
   const actualizar = async (e) => {
@@ -49,8 +51,10 @@ function RegistroAlumn() {
         info
       );
       console.log('respuesta: ', response.data);
+      alert('Se actualizo la asignacion!');
     } catch (err) {
       console.log('error al agregar: ', err.data);
+      alert('No se actualizar la asignacion, revisa los datos!');
     }
   };
   const eliminar = async (e) => {
@@ -61,8 +65,10 @@ function RegistroAlumn() {
         `https://localhost:7184/api/AlumnosMaterias/${info}`
       );
       console.log('respuesta: ', response.data);
+      alert('Se elimino la asignacion!');
     } catch (err) {
       console.log('error al agregar: ', err.data);
+      alert('No se pudo eliminar, revisa los datos!');
     }
   };
   return (

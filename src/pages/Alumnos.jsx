@@ -6,7 +6,6 @@ import axios from 'axios';
 
 function Alumnos() {
   const HandleSubmit = (event) => {
-    event.preventDefault();
     if (event.nativeEvent.submitter.name === 'agregar') {
       agregar(event);
     } else if (event.nativeEvent.submitter.name === 'actualizar') {
@@ -31,8 +30,10 @@ function Alumnos() {
         info
       );
       console.log('respuesta: ', response.data);
+      alert('Alumno creado!');
     } catch (err) {
       console.log('error al agregar: ', err.data);
+      alert('No pudimos crearlo, revisa los datos');
     }
   };
   const actualizar = async (e) => {
@@ -51,8 +52,10 @@ function Alumnos() {
         info
       );
       console.log('respuesta: ', response.data);
+      alert('Alumno actualizado con exito!');
     } catch (err) {
       console.log('error al agregar: ', err.data);
+      alert('No pudimos actualizarlo!');
     }
   };
   const eliminar = async (e) => {
@@ -63,8 +66,12 @@ function Alumnos() {
         `https://localhost:7184/api/Alumnos/${info}`
       );
       console.log('respuesta: ', response.data);
+      alert('Alumno Borrado!');
     } catch (err) {
       console.log('error al eliminar: ', err);
+      alert(
+        'No pudimos Eliminarlo, revisa los datos o que no tenga materias inscritas'
+      );
     }
   };
   return (

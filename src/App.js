@@ -7,6 +7,7 @@ import RegistroAlumn from './pages/RegistroAlumn';
 import RegistroProf from './pages/RegistroProf';
 import { Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Informe from './pages/Informe';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='materias' element={<Materias />} />
         <Route path='registroalumn' element={<RegistroAlumn />} />
         <Route path='registroprof' element={<RegistroProf />} />
+        <Route path='informe' element={<Informe />} />
       </Routes>
     </div>
   );

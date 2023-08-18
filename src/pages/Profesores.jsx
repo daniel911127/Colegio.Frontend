@@ -30,8 +30,10 @@ function Profesores() {
         info
       );
       console.log('respuesta: ', response.data);
+      alert('Profesor creado!');
     } catch (err) {
       console.log('error al agregar: ', err.data);
+      alert('No pudimos crearlo, revisa los datos');
     }
   };
   const actualizar = async (e) => {
@@ -50,8 +52,10 @@ function Profesores() {
         info
       );
       console.log('respuesta: ', response.data);
+      alert('Profesor actualizado con exito!');
     } catch (err) {
       console.log('error al agregar: ', err.data);
+      alert('No pudimos actualizarlo!');
     }
   };
   const eliminar = async (e) => {
@@ -62,8 +66,10 @@ function Profesores() {
         `https://localhost:7184/api/Profesores/${info}`
       );
       console.log('respuesta: ', response.data);
+      alert('Profesor Borrado!');
     } catch (err) {
       console.log('error al agregar: ', err.data);
+      alert('No pudimos Eliminarlo, revisa los datos');
     }
   };
   return (
